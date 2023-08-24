@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = +prompt("nhập chiều dài")
+    let b = +prompt("nhập chiều rộng")
+    for (let i = 1; i <= b; i++) {
+        if (i == 1 || i == b) {
+            for (let j = 1; j <= a; j++) {
+                document.write("*")
+                document.write("&nbsp")
+            }
+        } else {
+            for (let j = 1; j <= a; j++) {
+                if (j == 1 || j == a) {
+                    document.write("*")
+                    document.write("&nbsp")
+                } else {
+                    document.write("")
+                    document.write("&nbsp&nbsp&nbsp")
+                }
+            }
+        }
+        document.write("<br>")
+    }
+
+    </script>
+</body>
+</html>

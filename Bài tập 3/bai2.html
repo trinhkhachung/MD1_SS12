@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = +prompt("nhập số")
+        let a = 0
+        let b = 0   
+        let c = 2
+        while (a<number) {
+            for (let i = 2; i <=c ; i++) {
+                if (c % i==0) {b++}
+            }
+            if (b==1){
+                a++
+                console.log(c);
+            }
+            b=0
+            c++
+        }
+
+    </script>
+</body>
+</html>
